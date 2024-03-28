@@ -1,0 +1,13 @@
+pandas
+huggingface
+pyarrow
+huggingface-hub
+ipywidgets
+openai
+streamlit-chat
+streamlit
+black
+tiktoken
+pyht
+numpy
+simpleaudio
