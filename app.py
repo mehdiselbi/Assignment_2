@@ -70,7 +70,7 @@ def main():
         st.session_state["HF_URL"] = st.secrets["HF_URL"]
         st.session_state["PLAY_HT_API_KEY"] = st.secrets["PLAY_HT_API_KEY"]
         st.session_state["PLAY_HT_USER_ID"] = st.secrets["PLAY_HT_USER_ID"]
-        st.session_state["selected_method"] = "ask"  # Default value
+        st.session_state["selected_method"] = "fine_tuned_GPT"  # Default value
         if is_openai_api_key_set():
             # Assuming you also store the Play.ht API key in the session state or environment variable
             st.session_state["agent"] = Agent(llama2_hf_url=st.session_state["HF_URL"],llama2_hf_api_key=st.session_state["HF_API_KEY"] ,openai_api_key=st.session_state["OPENAI_API_KEY"], playht_user_id=st.session_state["PLAY_HT_USER_ID"], playht_api_key=st.session_state["PLAY_HT_API_KEY"])
